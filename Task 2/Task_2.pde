@@ -25,6 +25,7 @@ public static boolean iAmHappy()
   return true;
   else
   return false;
+  //Alternatively: return happy;
 }
 
 public static int calcSum(int a, int b) {
