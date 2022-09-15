@@ -7,9 +7,9 @@ public void setup() {
   }
   
   //get student by index
-  getStudent(students, (int)random(10));
-  getStudent(students, (int)random(10));
-  getStudent(students, (int)random(10));
+  println(getStudent(students, (int)random(10)));
+  println(getStudent(students, (int)random(10)));
+  println(getStudent(students, (int)random(10)));
   
   //get student by name
   int index = getStudentByName(students, "Student 2");
@@ -20,8 +20,8 @@ public void setup() {
   println(index3);
 }
 
-public void getStudent(Student[] s, int i) { //Technically, students is a global variable and does not need to be requested as a parameter
-  println(s[i].name);
+public String getStudent(Student[] s, int i) { //Technically, students is a global variable and does not need to be requested as a parameter
+  return s[i].name;
 }
 
 public int getStudentByName(Student[] s, String name) { // -//-

@@ -26,8 +26,8 @@ public void setup() {
   println(avgOfArray(i));
   
   //Sort the unsorted array
-  unsorted = sortArray(unsorted);
-  printArray(unsorted);
+  int[] sorted = sortArray(unsorted);
+  printArray(sorted);
 }
 
 public void printArray(int[] i) {
