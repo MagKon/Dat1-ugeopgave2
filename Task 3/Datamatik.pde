@@ -9,7 +9,7 @@ public void setup() {
   Student magnus = new Student("Magnus", 21, false, "A1");
   Student peter = new Student("Peter", 19, false, "A1");
   */
-  System.out.println(jesper.name + " teacher");
-  System.out.println(magnus.name + " " + magnus.datamatikerTeam);
-  System.out.println(peter.name + " " + peter.datamatikerTeam);
+  println(jesper.name + " teacher");
+  println(magnus.name + " " + magnus.datamatikerTeam);
+  println(peter.name + " " + peter.datamatikerTeam);
 }

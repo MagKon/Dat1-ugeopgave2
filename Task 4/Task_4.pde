@@ -49,16 +49,16 @@ public void printArray(boolean[] b) {
 }
 
 public int sumOfArray(int[] i) {
-  int j = 0;
+  int sum = 0;
   for (int l : i) {
-    j += l;
+    sum += l;
   }
-  return j;
+  return sum;
 }
 
 public float avgOfArray(int[] i) {
   float avg = 0;
-  avg = sumOfArray(i)/i.length;
+  avg = sumOfArray(i)/(float)i.length;
   return avg;
 }
 

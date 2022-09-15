@@ -1,7 +1,7 @@
 public boolean happy = false;
 
 void setup() {
-  iAmHappy();
+  //iAmHappy();
   if (iAmHappy())
   {
     println("I clap my hands");
