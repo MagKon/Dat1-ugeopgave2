@@ -1,24 +1,24 @@
-public static boolean happy = false;
+public boolean happy = false;
 
 void setup() {
   iAmHappy();
   if (iAmHappy())
   {
-    System.out.println("I clap my hands");
+    println("I clap my hands");
   }
   else
   {
-    System.out.println("I don't clap my hands"); 
+    println("I don't clap my hands"); 
   }
   int sum = calcSum(1, 2);
-  System.out.println(sum);
+  println(sum);
   String s = setToUpper("A generic string");
-  System.out.println(s);
+  println(s);
   boolean b = isFirstUpper("abc");
-  System.out.println(b);
+  println(b);
 }
 
-public static boolean iAmHappy()
+public boolean iAmHappy()
 {
   // fill out what is missing here: 
   if (happy)
@@ -28,16 +28,16 @@ public static boolean iAmHappy()
   //Alternatively: return happy;
 }
 
-public static int calcSum(int a, int b) {
+public int calcSum(int a, int b) {
   int sum = a + b;
   return sum;
 }
 
-public static String setToUpper(String s) {
+public String setToUpper(String s) {
   return s.toUpperCase();
 }
 
-public static boolean isFirstUpper(String s) {
+public boolean isFirstUpper(String s) {
   boolean isUpper = false;
   if (s.length() == 0)
     return false;

@@ -13,20 +13,20 @@ public void setup() {
   
   //get student by name
   int index = getStudentByName(students, "Student 2");
-  System.out.println(index);
+  println(index);
   int index2 = getStudentByName(students, "Student 1");
-  System.out.println(index2);
+  println(index2);
   int index3 = getStudentByName(students, "Student 8");
-  System.out.println(index3);
+  println(index3);
 }
 
-public static void getStudent(Student[] students, int i) {
-  System.out.println(students[i].name);
+public void getStudent(Student[] s, int i) { //Technically, students is a global variable and does not need to be requested as a parameter
+  println(s[i].name);
 }
 
-public static int getStudentByName(Student[] students, String name) {
+public int getStudentByName(Student[] s, String name) { // -//-
   int i = 0;
-  for (Student student : students) {
+  for (Student student : s) {
     if (student.name.equals(name)) {
       return i;
     }

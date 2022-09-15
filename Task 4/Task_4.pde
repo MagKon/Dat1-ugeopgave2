@@ -21,30 +21,48 @@ public void setup() {
   printArray(s);
   printArray(b);
   
+  println(sumOfArray(i));
+  
+  println(avgOfArray(i));
+  
   //Sort the unsorted array
   unsorted = sortArray(unsorted);
   printArray(unsorted);
 }
 
-public static void printArray(int[] i) {
+public void printArray(int[] i) {
     for (int j = 0; j < i.length; j++) {
-        System.out.println("i: " + i[j]);
+        println("i: " + i[j]);
     }
 }
 
-public static void printArray(String[] s) {
+public void printArray(String[] s) {
     for (int j = 0; j < s.length; j++) {
-        System.out.println("s: " + s[j]);
+        println("s: " + s[j]);
     }
 }
 
-public static void printArray(boolean[] b) {
+public void printArray(boolean[] b) {
     for (int j = 0; j < b.length; j++) {
-        System.out.println("b: " + b[j]);
+        println("b: " + b[j]);
     }
 }
 
-public static int[] sortArray(int[] i) {  
+public int sumOfArray(int[] i) {
+  int j = 0;
+  for (int l : i) {
+    j += l;
+  }
+  return j;
+}
+
+public float avgOfArray(int[] i) {
+  float avg = 0;
+  avg = sumOfArray(i)/i.length;
+  return avg;
+}
+
+public int[] sortArray(int[] i) {  
   i = sort(i);
   /*
   in standard Java:
